@@ -84,7 +84,7 @@ body {
 }
 
 #wrap {
-    min-width: 1360px;
+    min-width: 1400px;
     overflow: hidden;
 }
 
@@ -774,3 +774,4 @@ button {
     cursor: pointer;
     box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
 }
+
