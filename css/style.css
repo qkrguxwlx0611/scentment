@@ -84,7 +84,7 @@ body {
 }
 
 #wrap {
-    min-width: 1450px;
+    min-width: 1500px;
     overflow: hidden;
 }
 
@@ -807,4 +807,5 @@ button {
 .purple_box img:hover, .purple_box_2 img:hover, .swiper-wrapper img:hover{
     transform: scale(1.1);
 }
+
 
