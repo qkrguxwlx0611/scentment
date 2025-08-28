@@ -146,11 +146,17 @@ body {
 
 /* banner */
 #banner {
+    height: 600px;
+    position: relative;
+}
+
+.inner_baner{
     width: 1920px;
-    margin: 0 auto;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 
 #banner ul{
@@ -809,6 +815,7 @@ button {
 .purple_box img:hover, .purple_box_2 img:hover, .swiper-wrapper img:hover{
     transform: scale(1.1);
 }
+
 
 
 
