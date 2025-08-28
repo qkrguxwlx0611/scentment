@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1400">
+  <meta name="viewport" content="width=1360">
   <title>Document</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- webfont -->
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
@@ -41,10 +43,14 @@
         </ul>
       </div>
     </div>
-    
+
     <!-- banner -->
     <div id="banner">
-      <img src="images/banner.png" alt="#">
+      <ul>
+        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+        <li><a href="#"><img src="images/banner2.png" alt=""></a></li>
+        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+      </ul>
     </div>
 
     <!-- container -->
@@ -57,8 +63,10 @@
           <div class="section">Test</div>
           <!-- title -->
           <div class="title">
-            오늘의 기분
-            <br>감정 상태 기반 향 추천 진단
+            <p data-aos="fade-right" data-aos-duration="1000">
+              오늘의 기분
+              <br>감정 상태 기반 향 추천 진단
+            </p>
           </div>
           <!-- box -->
           <div class="box">
@@ -87,7 +95,7 @@
                 <p class="bold "> 지금, 당신만의 향을 발견해보세요.</p>
               </div>
               <!-- button -->
-              <div class="button">Go</div>
+              <button>*</button>
             </div>
           </div>
         </div>
@@ -104,8 +112,10 @@
           <div class="section_2">About</div>
           <!-- title_2 -->
           <div class="title_2">
-            센트먼트
-            <br>감성 큐레이션 브랜드
+            <p data-aos="fade-right" data-aos-duration="1000">
+              센트먼트
+              <br>감성 큐레이션 브랜드
+            </p>
           </div>
           <!-- box_2 -->
           <div class="box_2">
@@ -239,8 +249,10 @@
           <div class="section">Signature</div>
           <!-- title -->
           <div class="title">
-            감정 정수를 담은 향기
-            <br>시그니처 라인업
+            <p data-aos="fade-right" data-aos-duration="1000">
+              감정 정수를 담은 향기
+              <br>시그니처 라인업
+            </p>
           </div>
           <!-- box -->
           <!-- 1 -->
@@ -252,6 +264,8 @@
                 </div>
                 <div class="button_text">
                   <p>감정을 깨우는 아침의 공기</p>
+                </div>
+                <div class="img_wrap">
                 </div>
               </div>
               <!-- botton -->
@@ -310,8 +324,10 @@
           <!-- section -->
           <div class="section_2">Shop</div>
           <div class="title_2">
-            감정 루틴을 위한 핵심 제품
-            <br>시그니처 프라임
+            <p data-aos="fade-right" data-aos-duration="1000">
+              감정 루틴을 위한 핵심 제품
+              <br>시그니처 프라임
+            </p>
           </div>
         </div>
         <div class="product_slide">
@@ -393,11 +409,11 @@
       <div class="inner_container_4">
         <!-- content -->
         <div class="content">
-          <div class="title">
+          <div class="title_2">
             Feedback
           </div>
           <!-- section -->
-          <div class="section">Event</div>
+          <div class="section_2">Event</div>
           <!-- title -->
         </div>
         <div class="box_content_4">
@@ -445,27 +461,29 @@
       </div>
     </div>
 
+    <!-- banner JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/script.js"></script>
+
     <!-- top -->
     <div class="topBtn">↑</div>
 
     <!-- top JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-
     <script>
       $(function () {
-        // 맨위 부드럽게 이동
         $(".topBtn").click(function () {
           $("html,body").animate({
             scrollTop: '0'
           }, 1000);
         });
 
-        // 일정구간부터 버튼 나타나게 하기
         $(".topBtn").hide();
-        // 스크롤하면,
+
         $(window).scroll(function () {
-          // 100보다 크면 보이고, 100보다 작으면 사라진다.
+
           if ($(this).scrollTop() > 100) {
             $(".topBtn").fadeIn()
           } else {
@@ -474,7 +492,12 @@
         });
       });
     </script>
-</body>
 
+    <!-- aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
 
 </html>

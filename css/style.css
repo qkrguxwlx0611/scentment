@@ -84,7 +84,7 @@ body {
 }
 
 #wrap {
-    min-width: 1400px;
+    min-width: 1360px;
     overflow: hidden;
 }
 
@@ -131,22 +131,32 @@ body {
     border-radius: 100px;
 }
 
-.util{
+.util {
     display: flex;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
-    color: #666;
+    color: #000;
+    padding-top: 2px;
 }
 
-.util li{
+.util li {
     margin-left: 20px;
 
 }
 
 /* banner */
 #banner {
+    width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#banner ul{
     display: flex;
-    justify-content: center;
+}
+
+#banner img{
+    display: block;
 }
 
 /* container */
@@ -392,6 +402,7 @@ body {
     font-weight: bold;
     line-height: 54px;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .img_1 {
@@ -605,14 +616,22 @@ body {
 }
 
 /* container_5 */
-#container_5,
-#container_6 {
+#container_5{
     margin: 0 auto;
     height: 465px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+}
+
+#container_6 {
+    margin: 0 auto;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a5eff;
 }
 
 /* inner_container_4 */
@@ -772,6 +791,19 @@ button {
     bottom: 20px;
     z-index: 99;
     cursor: pointer;
-    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.5);
 }
 
+.purple_box, .purple_box_2{
+    overflow: hidden;
+}
+
+.purple_box img, .purple_box_2 img, .swiper-wrapper img{
+    display: block;
+    transform: scale(1,1);
+    transition: transform 0.3s;
+}
+
+.purple_box img:hover, .purple_box_2 img:hover, .swiper-wrapper img:hover{
+    transform: scale(1.1);
+}
